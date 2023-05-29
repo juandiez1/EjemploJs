@@ -1,0 +1,17 @@
+$.ajax({
+    url: 'https://reqres.in/api/users',
+    method: 'POST',
+    data: {
+      name: 'John Doe',
+      job: 'Developer'
+    },
+    success: function(response) {
+      console.log('Solicitud exitosa');
+      console.log(response);
+    },
+    error: function(xhr, status, error) {
+      console.log('Error en la solicitud');
+      console.log(error);
+    }
+  });
+  
